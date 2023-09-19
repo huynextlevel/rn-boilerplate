@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, TextStyle, StyleProp } from 'react-native'
 
-import { colors } from 'src/styles'
+import { colors } from 'src/globals/styles'
 import { fontWeights, textAlign } from 'src/components/globals'
 
 export interface TypographyProps {

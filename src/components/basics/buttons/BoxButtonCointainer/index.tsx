@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, TouchableOpacity, ViewStyle, TouchableOpacityProps } from 'react-native'
 
-import { colors } from 'src/styles'
+import { colors } from 'src/globals/styles'
 
 export interface BoxButtonContainerProps extends TouchableOpacityProps {
   /**
