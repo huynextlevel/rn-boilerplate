@@ -1,79 +1,50 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Boilerplate
 
-# Getting Started
+[![React Native](https://img.shields.io/badge/React%20Native-v0.71.11-green.svg)](https://facebook.github.io/react-native/)
+[![React Navigation V6](https://img.shields.io/badge/React%20Navigation-v6.0-blue.svg)](https://reactnavigation.org/)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+React Native Boilerplate is a starting point for React Native application. This project is configured with redux.
+Uses latest version of react-navigation (v6.0).
 
-## Step 1: Start the Metro Server
+## Features
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [React Navigation](https://reactnavigation.org/) with [Authentication flow](https://reactnavigation.org/docs/auth-flow) baked in & theming support.
+- [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler)
+- [Redux](http://redux.js.org/) with [hooks](https://react-redux.js.org/api/hooks) support
+- [Jest](https://facebook.github.io/jest/)
+- [Eslint](http://eslint.org/)
+- [Typescript](https://www.typescriptlang.org/)
+  
+## Prerequisites
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- [Node](https://nodejs.org) v16 (it is recommended to install it via [NVM](https://github.com/creationix/nvm))
+- [Yarn](https://yarnpkg.com/)
+- A development machine set up for React Native by following [these instructions](https://facebook.github.io/react-native/docs/getting-started.html)
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Getting Started
 
-```bash
-# using npm
-npm start
+1. Clone this repo, `git clone https://github.com/huynextlevel/react-native-boilerplate.git <your project name>`
+2. Go to project's root directory, `cd <your project name>`
+3. Remove `.git` folder, `rm -rf .git`
+4. Use [React Native Rename](https://github.com/junedomingo/react-native-rename) to update project name `$ npx react-native-rename <newName> -b "bundle_identifier"`
+5. Run `yarn` to install dependencies
+6. If your laptop still use `pod` installed from `gem`. Please run:
+  - `bundle install`
+  - `cd ios && pod install`
+7. If your laptop use `pod` installed from `hombrew`. Run `cd ios && pod install`
 
-# OR using Yarn
-yarn start
-```
+8. Start the packager with `yarn start`
+9. Connect a mobile device to your development machine
+10. Run the test application:
 
-## Step 2: Start your Application
+- On Android:
+  - Run `react-native run-android` or Use Android Studio (Recommended)
+- On iOS:
+  - Open `ios/YourReactProject.xcworkspace` in Xcode
+  - Hit `Run` after selecting the desired device
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+10. Enjoy!!!
 
-### For Android
+## Contributing
 
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+PRs are welcome
